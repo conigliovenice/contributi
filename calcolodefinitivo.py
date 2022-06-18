@@ -1,8 +1,10 @@
+from datetime import date
 anni = input(
-    "inserisci l'eta'")
+    "inserisci l'eta' ")
 settimane = input(
     "inserisci il numero di contributi al 31/12 dell' anno precedente al corrente ")
-anno = input("digita anno corrente ")
+anno = date.today().year
+anni = int(anni)
 anno = int(anno)
 anno = anno-1
 annox= anno
@@ -11,7 +13,7 @@ settimanex = settimane
 
 #calcolo anticipata donne
 print("")
-print("calcolo pensione anticipata donne")
+print("CALCOLO PENSIONE ANTICIPATA DONNE")
 print("")
 while settimane <= 2175:
     settimane += 52
@@ -68,7 +70,7 @@ print("decorrenza soggetta a incremento dell'aspettativa di vita")
 settimanem = settimanex
 annom = annox
 print("")
-print("calcolo pensione anticipata uomini")
+print("CALCOLO PENSIONE ANTICIPATA UOMINI")
 print("")
 while settimanem <= 2227:
     settimanem += 52
@@ -123,10 +125,12 @@ print("decorrenza soggetta a incremento dell'aspettativa di vita")
 
 #calcolo pensione di vecchiaia
 print("")
-print("calcolo pensione di vecchiaia")
+print("CALCOLO PENSIONE DI VECCHIAIA")
 print("")
-annov = anno
-while anni <= 67:
+annov = annox
+anni = anni -1
+while anni < 67:
+    
     anni += 1
     annov += 1
     print(annov, anni)
@@ -136,4 +140,3 @@ print("")
 print("dal mese successivo al compimento dei 67 anni")
 print("")
 print("decorrenza soggetta a incremento dell'aspettativa di vita")
-
