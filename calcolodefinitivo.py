@@ -1,8 +1,14 @@
 from datetime import date
-anni = input(
-    "inserisci l'eta' ")
+from datetime import datetime
+
+datadinascita  = input("Inserisci data di nascita gg/mm/aaaa:")
+
+b_date = datetime.strptime(datadinascita, '%d/%m/%Y')
+
+anni = ("%d" % ((datetime.today() - b_date).days/365))
+print (anni, "anni")
 settimane = input(
-    "inserisci il numero di contributi al 31/12 dell' anno precedente al corrente ")
+    "inserisci il numero di contributi al 31/12 dell' anno precedente al corrente: ")
 anno = date.today().year
 anni = int(anni)
 anno = int(anno)
