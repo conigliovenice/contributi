@@ -1,0 +1,135 @@
+Hide files
+
+
+Like
+
+Run
+12
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+▼
+▼
+▼
+# -*- coding: utf-8 -*-
+
+from datetime import date
+from datetime import datetime
+print ()
+print ()
+#calcola età
+
+datadinascita = input("Inserisci data di nascita gg/mm/aaaa:")
+
+anno = date.today().year
+
+b_date = datetime.strptime(datadinascita, '%d/%m/%Y')
+anni  = ("%d" % ((datetime.today() - b_date).days/365))
+anni = int(anni)
+
+anno = int(anno)
+annod = anno
+annou = anno
+annop = anno
+annod = anno
+annov = anno
+
+
+print ("età:", anni)
+print()
+
+print()
+settimane = input("inserisci il numero di contributi al 31/12 dell' anno precedente al corrente: ")
+print()
+print()
+settimane = int(settimane)
+
+settimaned=settimane
+settimaneu=settimane
+settimanep=settimane
+settimaneod=settimane
+settimanev=settimane
+#calcolo pensione di vecchiaia
+
+while settimanev <= 1040:
+  anni +=1
+  annov +=1 
+  if anni == 67:
+    break
+  
+print("pensione di vecchiaia",annov,"-", anni,"anni")
+print()
+#decorrenza donna
+
+a = 0
+a = int(a)
+while settimaned < 2175:    
+    a += 1
+    settimaned += 52
+  
+  
+a= a-1
+settimaned = (settimaned) - 52
+settimanemesi = [5, 4, 4, 4, 5, 4, 4, 5, 4, 5, 4, 4]
+mesi = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre']
+b=-1
+Files
